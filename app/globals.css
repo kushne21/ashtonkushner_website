@@ -27,6 +27,6 @@ body {
 
 @layer base{
   * {
-  @apply border border-black;
+  /*@apply border border-black;*/
 }
 }
