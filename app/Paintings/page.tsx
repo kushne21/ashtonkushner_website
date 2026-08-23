@@ -1,13 +1,15 @@
 import Images from "./images"
+import Modal from "./modal"
+
 
 
 export default function Paintings() {
   return (
      <>
-    <h1>good morining crusty crew</h1>
     <Images></Images>
-    <div>hey</div>
+     <Modal></Modal>
     </>
+   
     
    ); 
 

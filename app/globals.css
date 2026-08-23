@@ -30,3 +30,11 @@ body {
   /*@apply border border-black;*/
 }
 }
+
+.ul {
+  @apply flex flex-wrap flex-row relative gap-x-0.5 gap-y-0.5 justify-center;
+}
+
+.Image {
+  /* @apply rounded-2xl; */
+}
