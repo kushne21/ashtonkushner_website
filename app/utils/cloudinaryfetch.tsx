@@ -1,5 +1,5 @@
-import { v2 as cloudinary } from "cloudinary";
-
+import cloudinaryLib  from "cloudinary";
+const cloudinary = cloudinaryLib.v2
 //seems to work
 export default function getCloudinary() {
     cloudinary.config({

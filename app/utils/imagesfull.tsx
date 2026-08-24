@@ -1,5 +1,5 @@
-import Images from "./Paintings/imagesstuff"
-import type imagesProps from "./Paintings/imagesstuff"
+import Images from "../Paintings/imagesstuff"
+import type imagesProps from "../Paintings/imagesstuff"
 
 
 

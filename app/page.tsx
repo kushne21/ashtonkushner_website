@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Imagesfull from './imagesfull';
+import Imagesfull from './utils/imagesfull';
 import MiscAudio from './utils/audiocomponent';
 
 
