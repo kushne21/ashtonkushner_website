@@ -31,7 +31,7 @@ export default function RootLayout({
           {children} 
         </main>
         
-        <footer className="inset-x-0 text-center p-4 bg-[#f5e1f0]">
+        <footer className="inset-x-0 text-center p-4 bottom-3 bg-[#f5e1f0]">
           ©2026 Ashton Kushner | Built with Next.js & Cloudinary
           </footer>
         </body>
