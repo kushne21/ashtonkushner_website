@@ -26,12 +26,20 @@ export default async function Images(props : imagesProps) {
     let newStr : string = "folder=";
     let newestStr : string = newStr.concat(folderStr," AND tags=",tagsStr)
     const { resources } = await cloudinary.search.expression(newestStr).execute();
+    console.log("executed");
+    //TOO MANY CALLS TO THIS FUCKER. ONLY 500 PER HOUR
+    //can implement caching for each call perhaps? if that works?
+    //https://github.com/cloudinary-devs/nextjs-pa-pages/blob/main/pages/album/index.tsx
     return (
+          <div className=""> 
+                <h1 className="m-10">
+                        {tagsStr}
+                </h1>
         
              <ul className="ul">
 
           {resources.map((image: CldImage) => (
-            
+              
                 <li key={image.public_id} className="">
                     <a href="/">
                 <CldImage
@@ -51,7 +59,7 @@ export default async function Images(props : imagesProps) {
             
             
 
-          ))}</ul>
+          ))}</ul></div>
         
         
         

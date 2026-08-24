@@ -32,7 +32,10 @@ export default function RootLayout({
         <Link href="/Paintings">Paintings</Link>
         <Link href="/Digital">Digital</Link>
         <Link href="/">Home</Link>
-        {children}</body>
+        {children} 
+        <footer className="absolute inset-x-0 text-center bottom-3">©2026 Ashton Kushner</footer>
+        </body>
+       
     </html>
   );
 }
