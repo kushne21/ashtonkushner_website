@@ -41,7 +41,7 @@ export default async function Images(props : imagesProps) {
           {resources.map((image: CldImage) => (
               
                 <li key={image.public_id} className="">
-                    <a href="/">
+                    <a href={image.secure_url}>
                 <CldImage
 
                     alt={image.public_id}

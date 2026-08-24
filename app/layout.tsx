@@ -23,12 +23,17 @@ export default function RootLayout({
       lang="en"
       className={`  h-full  antialiased ` }
     >
-      <body className={`min-h-full ${inter.className}`}>
-        <Link href="/Paintings">Paintings</Link>
+      <body className={` flex flex-col min-h-full ${inter.className} screen`}>
+        {/* <Link href="/Paintings">Paintings</Link>
         <Link href="/Digital">Digital</Link>
-        <Link href="/">Home</Link>
-        {children} 
-        <footer className="absolute inset-x-0 text-center bottom-3">©2026 Ashton Kushner</footer>
+        <Link href="/">Home</Link> */}
+        <main className="grow ">
+          {children} 
+        </main>
+        
+        <footer className="inset-x-0 text-center p-4 bg-[#f5e1f0]">
+          ©2026 Ashton Kushner | Built with Next.js & Cloudinary
+          </footer>
         </body>
        
     </html>
