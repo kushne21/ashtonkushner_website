@@ -7,7 +7,7 @@ export default function Home() {
   
   return (
     <div>
-      <div className="flex flex-row flex-wrap justify-center items-center gap-x-15  h-screen">
+      <div className="flex flex-row flex-wrap justify-center items-center gap-x-15   w-screen min-h-screen">
         <div className=" text-center ">
           <h1 className="text-4xl m-2"> Hello! </h1>
           <h2  className="text-5xl"> I'm <span className="text-[#4a1d97]">Ashton Kushner!</span></h2>
@@ -66,8 +66,10 @@ export default function Home() {
         
 
       </div>
+      <div className="min-h-0">
+              <Imagesfull></Imagesfull>
+      </div>
       
-      <Imagesfull></Imagesfull>
 
 
     </div>

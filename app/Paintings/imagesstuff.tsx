@@ -15,6 +15,8 @@ type CldImage = {
 
   height: number;
 
+  //image_metadata: string;
+
 };
 interface imagesProps {
   folder: string,
@@ -53,7 +55,9 @@ export default async function Images(props : imagesProps) {
                     height={150}
                     style={{ width: 'auto', height: '100%', objectFit: 'cover', borderRadius: '14px'}}
 
-                /></a>
+                />
+                {/* <h2>{image.image_metadata.toString()}</h2> */}
+                </a>
 
                 </li>
             

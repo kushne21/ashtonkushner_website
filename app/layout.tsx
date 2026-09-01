@@ -24,9 +24,7 @@ export default function RootLayout({
       className={`  h-full  antialiased ` }
     >
       <body className={` flex flex-col min-h-full ${inter.className} screen`}>
-        {/* <Link href="/Paintings">Paintings</Link>
-        <Link href="/Digital">Digital</Link>
-        <Link href="/">Home</Link> */}
+        
         <main className="grow ">
           {children} 
         </main>
