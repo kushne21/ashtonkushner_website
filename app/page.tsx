@@ -4,7 +4,9 @@ import MiscAudio from './utils/audiocomponent';
 
 
 export default function Home() {
-  
+  //img.addEventListener('click', function () {
+			//	showModal(img.src);
+			//});
   return (
     <div>
       <div className="flex flex-row flex-wrap justify-center items-center gap-x-15   w-screen min-h-screen">
@@ -13,7 +15,8 @@ export default function Home() {
           <h2  className="text-5xl"> I'm <span className="text-[#4a1d97]">Ashton Kushner!</span></h2>
           <h3  className="text-4xl m-2">Developer, Artist</h3>
           <h4  className="text-3xl">Have Fun!</h4>
-          <div className="flex justify-center m-8 ">
+          <div className="flex flex-col text-center items-center justify-center m-8 ">
+
              <Image 
               src="/AshtonHeadshot.png"
               alt="Picture of Ashton"
@@ -21,6 +24,7 @@ export default function Home() {
               height={300}
               style={{borderRadius: '30%'}}
             ></Image>
+            <h4>About Me</h4>
           </div>
          
         </div>
