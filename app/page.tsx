@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Imagesfull from './utils/imagesfull';
 import MiscAudio from './utils/audiocomponent';
+import Modal from './utils/modal';
 
 
 export default function Home() {
@@ -8,7 +9,14 @@ export default function Home() {
 			//	showModal(img.src);
 			//});
   return (
-    <div>
+    <div >
+      <div id="amodal"className="hidden target:flex">
+        <Modal >
+        
+           About Me...
+        </Modal>
+      </div>
+      
       <div className="flex flex-row flex-wrap justify-center items-center gap-x-15   w-screen min-h-screen">
         <div className=" text-center ">
           <h1 className="text-4xl m-2"> Hello! </h1>
@@ -24,7 +32,10 @@ export default function Home() {
               height={300}
               style={{borderRadius: '30%'}}
             ></Image>
-            <h4>About Me</h4>
+            <a href="#amodal"className='font-bold'>
+              About Me
+            </a>
+            
           </div>
          
         </div>
