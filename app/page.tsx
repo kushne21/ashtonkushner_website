@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Imagesfull from './utils/imagesfull';
 import MiscAudio from './utils/audiocomponent';
 import Modal from './utils/modal';
+import Navbar from './utils/navbar';
 
 
 export default function Home() {
@@ -10,6 +11,7 @@ export default function Home() {
 			//});
   return (
     <div >
+      <Navbar exists={false}></Navbar>
       <div id="amodal"className="hidden target:flex">
         <Modal >
         
@@ -41,47 +43,49 @@ export default function Home() {
         </div>
         <div className="m-15">
           <div className="flex bg-[#f5e1f0] flex-row gap-x-1 justify-center rounded-2xl m-5 p-8">
-            <a href="https://github.com/kushne21"> <Image
+            <a href="https://github.com/kushne21" className="hover:animate-pulse"> <Image
             src="/github.svg" 
             alt="my icon"
             width={100}
             height={100}
             ></Image></a>
-            <a href="https://www.linkedin.com/in/ashton-kushner-9b52b32a6/"> <Image
+            <a href="https://www.linkedin.com/in/ashton-kushner-9b52b32a6/" className="hover:animate-pulse"> <Image
             src="/linkedin.svg" 
             alt="my icon"
             width={100}
             height={100}></Image></a>
-            <a href="mailto:kushne21@msu.edu"> <Image
+            <a href="mailto:kushne21@msu.edu" className="hover:animate-pulse"> <Image
             src="/contact.svg" 
             alt="my icon"
             width={100}
             height={100}></Image></a>
           </div>
-          <div className="flex bg-[#e1f5ea] flex-row gap-x-1 justify-center rounded-2xl m-5 p-8">
-            <a href="#PaintingsArt"> <Image
+          <div className="flex bg-[#e1f5ea] flex-row gap-x-1 justify-center rounded-2xl m-5 p-8" >
+            <a href="#PaintingsArt" className="hover:animate-pulse"> <Image
             src="/painting.svg" 
             alt="my icon"
             width={100}
             height={100}></Image></a>
-            <a href="#DigitalArt"> <Image
+            <a href="#DigitalArt" className="hover:animate-pulse"> <Image
             src="/illustration.svg" 
             alt="my icon"
             width={100}
             height={100}></Image></a>
             <MiscAudio></MiscAudio>
-            {/* <a href=""> <Image
-            src="/misc.svg" 
-            alt="my icon"
-            width={100}
-            height={100}></Image></a> */}
 
+          </div>
+        
+          <div className="flex bg-blue-200 flex-row gap-x-1 justify-center rounded-2xl m-5 p-8">
+              <a href="CodingProjects">
+                <h1 className="text-2xl m-2 text-[#415a85] transition-colors duration-200 hover:text-blue-600"> Coding Projects </h1>
+              </a>
           </div>
         </div>
         
 
       </div>
       <div className="min-h-0">
+        
               <Imagesfull></Imagesfull>
       </div>
       

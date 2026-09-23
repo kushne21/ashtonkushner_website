@@ -23,7 +23,7 @@ export default function MiscAudio() {
     //    musicPlayers.current?.play();
     //  }
     return (
-        <button onClick={playMeow}> <Image
+        <button onClick={playMeow} className="hover:animate-spin"> <Image
                     src="/misc.svg" 
                     alt="my icon"
                     width={80}
