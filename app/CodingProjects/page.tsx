@@ -10,7 +10,7 @@ export default function Home() {
         <div className="pb-5">
         <hr className="pt-2 pb-5"></hr>
         
-        <div id="proj1" className="flex flex-row  justify-center items-center gap-x-15">
+        <div  className="flex flex-row  justify-center items-center gap-x-15 pb-2">
             
                 <Image 
             src="/proj1.png"
@@ -23,8 +23,11 @@ export default function Home() {
             
             <div className="text-center pb-5">
                 <a href="./"><h1 className="font-semibold text-center text-xl pb-2 transition-colors duration-200 hover:text-blue-600">This portfolio website!</h1></a>
-                <p>This website was made using Next.JS with React, Typescript, and TailwindCSS. I used an
-                    API for Cloudinary CDN to host the images so they'd appear quicker.
+                <p className="text-xs pb-2">Next.JS, React, Typescript, TailwindCSS, Cloudinary CDN.
+                </p>
+                
+                <p>
+                    A mix of an image portfolio, coding portfolio, and link tree. I'll be adding some other stuff like a blog soon!
                 </p>
             </div>
             
@@ -35,10 +38,7 @@ export default function Home() {
         </div>
 
         <div className="pb-5">
-
-        
-            
-        <div id="proj1" className="flex flex-row  justify-center items-center gap-x-15">
+        <div className="flex flex-row  justify-center items-center gap-x-15 pb-5">
             
                 <Image 
             src="/proj2.png"
@@ -47,19 +47,76 @@ export default function Home() {
               height={200}
               style={{borderRadius:"30%"}}>
             </Image>
+      
+            <div className="text-center">
+                <a href="https://youtube.com/shorts/pOPui0hwFBY"><h1 className="text-center font-semibold text-xl pb-2 transition-colors duration-200 hover:text-blue-600">AI-Based Arduino Boxing Machine</h1></a>
+                <p className="text-xs pb-2">C, Arduino UNO, TouchDesigner, a punching bag, a projecter, MadMapper.
+                </p>
+                
+                <p> It used an impact sensor to determine the users score when punched, and displayed only images
+                    of AI generated creatures laughing in real-time.
+                </p>
+            </div>
+        </div>
+        <hr></hr>
+        </div>
+
+
+
+        <div className="pb-5">
+        <div id="proj1" className="flex flex-row  justify-center items-center gap-x-15 pb-5">
+            
+                <Image 
+            src="/proj3.png"
+              alt="Picture of elug"
+              width={200}
+              height={200}
+              style={{borderRadius:"30%"}}>
+            </Image>
 
             
             <div className="text-center">
-                <a href="https://youtube.com/shorts/pOPui0hwFBY"><h1 className="text-center font-semibold text-xl pb-2 transition-colors duration-200 hover:text-blue-600">AI-Based Arduino Boxing Machine</h1></a>
-                <p>This project was made using an Arduino UNO, TouchDesigner, a punching bag, a projecter, and MadMapper.
+                <a href="https://capstone.cse.msu.edu/2025-08/projects/henry-ford-innovations-elug/"><h1 className="text-center font-semibold text-xl pb-2 transition-colors duration-200 hover:text-blue-600">eLUG for Henry Ford Health</h1></a>
+                <p className="text-xs pb-2">PHP, Javascript, HTML/CSS, MS-SQL.
                 </p>
-                <p> It used an impact sensor to determine the users score when punched, and displayed only images
-                    of AI generated creatures laughing in real-time.
+                <p> Team project for my capstone for Henry Ford Health at Michigan State University. Redesigned their electronic laboratory users guide website.
+                </p>
+                <p>
+                    Helped design some APIs, security functionality, and various front end things.
                 </p>
             </div>
         
 
         </div>
+        <hr></hr>
+        </div>
+
+        <div className="pb-5">
+        <div id="proj1" className="flex flex-row  justify-center items-center gap-x-15 pb-5">
+            
+                <Image 
+            src="/proj4.jpg"
+              alt="Picture of burber"
+              width={200}
+              height={200}
+              style={{borderRadius:"30%"}}>
+            </Image>
+
+            
+            <div className="text-center">
+                <h1 className="text-center font-semibold text-xl pb-2 transition-colors duration-200 hover:text-blue-600">Burber Discord Bot</h1>
+                <p className="text-xs pb-2">Python, Discord API.
+                </p>
+                <p> Private Discord bot for usage within personal servers. Some usages are: setting up an automatic Secret Santa game assigner, call and response messages.
+                </p>
+                <p>
+                    Currently no link because it is private.
+                </p>
+                
+            </div>
+        
+        </div>
+        <hr></hr>
         </div>
     </div>
     </>
