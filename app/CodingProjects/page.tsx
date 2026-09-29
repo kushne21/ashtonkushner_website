@@ -7,18 +7,20 @@ export default function Home() {
     <Navbar exists={true}></Navbar>
     <div className="pt-15 pl-2 pr-2">
         <h1 className="text-center text-3xl pb-3">Coding Projects</h1>
-        <div className="pb-5">
+        <div className="flex flex-col pb-5 justify-center">
         <hr className="pt-2 pb-5"></hr>
         
-        <div  className="flex flex-row  justify-center items-center gap-x-15 pb-2">
-            
-                <Image 
+        <div  className="flex flex-row  items-center gap-x-15 pb-2">
+            <div className='flex w-1/2 justify-center'>
+            <Image 
             src="/proj1.png"
               alt="Picture of website"
               width={200}
               height={200}
               style={{borderRadius:"30%"}}>
             </Image>
+            </div>
+                
 
             
             <div className="text-center pb-5">
@@ -27,7 +29,7 @@ export default function Home() {
                 </p>
                 
                 <p>
-                    A mix of an image portfolio, coding portfolio, and link tree. I'll be adding some other stuff like a blog soon!
+                    A mix of an image portfolio, coding portfolio, and link tree. Using this as more of playful project. I'll be adding some other stuff like a blog soon!
                 </p>
             </div>
             
@@ -38,15 +40,17 @@ export default function Home() {
         </div>
 
         <div className="pb-5">
-        <div className="flex flex-row  justify-center items-center gap-x-15 pb-5">
-            
-                <Image 
+        <div className="flex flex-row items-center gap-x-15 pb-5">
+            <div className='flex w-1/2 justify-center'>
+                <Image className="h-40 w-auto"
             src="/proj2.png"
               alt="Picture of boxing machine"
               width={200}
               height={200}
               style={{borderRadius:"30%"}}>
             </Image>
+            </div>
+                
       
             <div className="text-center">
                 <a href="https://youtube.com/shorts/pOPui0hwFBY"><h1 className="text-center font-semibold text-xl pb-2 transition-colors duration-200 hover:text-blue-600">AI-Based Arduino Boxing Machine</h1></a>
@@ -64,15 +68,16 @@ export default function Home() {
 
 
         <div className="pb-5">
-        <div id="proj1" className="flex flex-row  justify-center items-center gap-x-15 pb-5">
-            
-                <Image 
+        <div id="proj1" className="flex flex-row  items-center gap-x-15 pb-5">
+            <div className='flex w-1/2 justify-center'>
+            <Image className="h-40 w-auto"
             src="/proj3.png"
               alt="Picture of elug"
               width={200}
               height={200}
               style={{borderRadius:"30%"}}>
-            </Image>
+            </Image></div>
+                
 
             
             <div className="text-center">
@@ -92,15 +97,17 @@ export default function Home() {
         </div>
 
         <div className="pb-5">
-        <div id="proj1" className="flex flex-row  justify-center items-center gap-x-15 pb-5">
-            
-                <Image 
+        <div id="proj1" className="flex flex-row  items-center gap-x-15 pb-5">
+            <div className='flex w-1/2 justify-center'>
+            <Image className="h-40 w-auto"
             src="/proj4.jpg"
               alt="Picture of burber"
               width={200}
               height={200}
               style={{borderRadius:"30%"}}>
             </Image>
+            </div>
+                
 
             
             <div className="text-center">
@@ -117,6 +124,35 @@ export default function Home() {
         
         </div>
         <hr></hr>
+
+        <div className="pb-5">
+        <div id="proj1" className="flex flex-row   items-center gap-x-15 pb-5">
+            
+                <div className='flex w-1/2 justify-center'>
+               <Image className="h-40 w-auto"
+            src="/proj5.png"
+              alt="Picture of Shum"
+              width={200}
+              height={200}
+              style={{borderRadius:"30%"}}>
+            </Image> </div>
+
+            
+            <div className="text-center">
+                <a href="https://www.churchofshum.org"><h1 className="text-center font-semibold text-xl pb-2 transition-colors duration-200 hover:text-blue-600">Church of Shum</h1></a>
+                <p className="text-xs pb-2"> TypeScript, Next.JS, ReactJS, Java, PostgresQL
+                </p>
+                <p> Fictional church website and blog for a silly character. Will feature the ability to sign in, authorization, and other things. Still in progress.
+                </p>
+                <p>
+                    NOTE: WIP!!!!! NOT FINISHED
+                </p>
+                
+            </div>
+        
+        </div>
+        <hr></hr>
+        </div>
         </div>
     </div>
     </>
